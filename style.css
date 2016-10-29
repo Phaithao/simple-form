@@ -65,7 +65,7 @@ footer {
         width: 100%;
     }
     form > p input:last-child {
-        margin-left: 0 transition: all .3s ease-in;
+        margin-left: 0; transition: all .3s ease-in;
     }
     label {text-align: left;}
 }
