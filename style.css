@@ -6,8 +6,66 @@ main {
     padding: 5px;
 }
 
+form {}
+
+label {
+    width: 120px;
+    text-align: right;
+    float: left;
+}
+
+fieldset {
+    width: 350px;
+    border: 1px solid grey;
+}
+
+textarea {
+    width: 260px;
+    height: 170px;
+}
+
+textarea,
+input {
+    color: #7e8284;
+    border: 1px solid #b6b9ba;
+    border-bottom-color: #a2a2a2;
+    /* cursor: pointer; */
+    padding: 7px;
+}
+
+input[type=submit] {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 120px;
+    font-weight: bold;
+    color: #7e8284;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    background: #6a6e6f;
+    border: 1px solid #b6b9ba;
+    border-bottom-color: #a2a2a2;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    border-radius: 15px;
+}
+
+input[type=submit]:hover {
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 4px #f6f6f6;
+}
+
 footer {
     padding: 15px 5px;
     font-size: 0.8em;
     color: #666666;
+}
+
+@media screen and (max-width: 480px) {
+    form > p > label,
+    form > p > input {
+        transition: all .3s ease-in;
+        width: 100%;
+    }
+    form > p input:last-child {
+        margin-left: 0 transition: all .3s ease-in;
+    }
+    label {text-align: left;}
 }
